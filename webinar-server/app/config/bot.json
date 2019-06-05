@@ -1,0 +1,32 @@
+{
+    "rainbow": {
+        "host": "sandbox.openrainbow.com"
+    },
+    "credentials": {
+        "login": "<bot login>",
+        "password": "<bot password>"
+    },
+    "application": {
+        "appID": "<your app ID>",
+        "appSecret": "<your app secret>"
+    },
+    "logs": {
+        "enableConsoleLogs": true,
+        "enableFileLogs": false,
+        "color": true,
+        "level": "error",
+        "customLabel": "Webinar",
+        "system-dev": {
+            "internals": true,
+            "http": true
+        },
+        "file": {
+            "path": "/tmp",
+            "customFileName": "R-SDK-Node-StarterKit",
+            "zippedArchive": false
+        }
+    },
+    "im": {
+        "sendReadReceipt": false
+    }
+}

@@ -1,0 +1,58 @@
+.App {
+    text-align: center;
+}
+
+.App-logo {
+    height: 20vmin;
+    margin-bottom: 32px;
+    pointer-events: none;
+}
+
+.App-header {
+    background-color: #fff;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: #282c34;
+}
+
+.App-link {
+    color: #61dafb;
+}
+
+.App-oauth-btn,
+.App-guest-btn {
+    font-size: 16px;
+    color: #1b85e0;
+    padding: 8px 8px;
+    height: 24px;
+    line-height: 24px;
+    border: 1px solid #eeeeee;
+    border-radius: 6px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.App-oauth-btn:hover,
+.App-guest-btn:hover {
+    cursor: pointer;
+    border: 1px solid #cccccc;
+}
+
+.App-rainbow-logo {
+    background-image: url("./logo.svg");
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    background-position: center;
+    padding-left: 4px;
+}
+
+.App-rainbow-title {
+    height: 24px;
+    padding-left: 6px;
+    vertical-align: super;
+}
