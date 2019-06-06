@@ -25,6 +25,16 @@ $ npm install
 
 ## Setup
 
+Replace under the file [./webinar-client/src/modules/appSDK.js](./webinar-client/src/modules/appSDK.js) the **application ID**
+
+```javascript
+...
+export function authenticateOauth() {
+    const appID = "<your application id>"; // Fill with your application ID
+    const oauthResponseType = "code"; // Grant
+...
+```
+
 Replace under the file [./webinar-server/app/config/bot.json](./webinar-server/app/config/bot.json) the **bot login**, **bot password**, **app ID**, and **app secret**
 
 ```json
@@ -40,6 +50,12 @@ Replace under the file [./webinar-server/app/config/bot.json](./webinar-server/a
 ...
 ```
 
+Using the Rainbow Node CLI, associated the oauth redirect uri, replace **application Id** by your own app Id:
+
+```shell
+$ rbw application set-redirecturi <application Id> "https://localhost:3002/webinar/oauth"
+```
+
 ## Execution
 
 Client:
@@ -53,3 +69,5 @@ Server:
 $ cd webinar-server
 $ npm start
 ```
+
+By default client port running on **3002** and server port running on **3000**. 
